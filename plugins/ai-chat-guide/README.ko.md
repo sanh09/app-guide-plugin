@@ -1,4 +1,4 @@
-# ai-chat-guide: Claude 앱 사용법 튜터
+# appguide-tutor: Claude 앱 사용법 튜터
 
 [English](README.md) | **한국어**
 
@@ -31,7 +31,7 @@ Claude 웹·데스크톱 앱을 첫 대화부터 커넥터·스킬까지 단계�
 
 ## 설치
 
-Claude 웹 또는 데스크톱 앱에서 **사용자 정의(Customize)** → **플러그인(Plugins)** → **추가(Add)** → **마켓플레이스 추가(Add marketplace)** → **저장소에서 추가(Add from a repository)**로 `sanh09/app-guide-plugin`을 입력한 뒤 `ai-chat-guide`를 추가하세요.
+Claude 웹 또는 데스크톱 앱에서 **사용자 정의(Customize)** → **플러그인(Plugins)** → **추가(Add)** → **마켓플레이스 추가(Add marketplace)** → **저장소에서 추가(Add from a repository)**로 `sanh09/app-guide-plugin`을 입력한 뒤 `appguide-tutor`를 추가하세요. 이 플러그인에는 스킬 `ai-chat-guide`가 들어 있습니다.
 
 ## 플러그인이 하는 일
 

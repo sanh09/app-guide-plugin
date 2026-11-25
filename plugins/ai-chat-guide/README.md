@@ -1,4 +1,4 @@
-# ai-chat-guide: Claude app guide tutor
+# appguide-tutor: Claude app guide tutor
 
 **English** | [한국어](README.ko.md)
 
@@ -31,7 +31,7 @@ Menu paths, commands, and settings are checked against the official documentatio
 
 ## Install
 
-In the Claude web or desktop app: **Customize** → **Plugins** → **Add** → **Add marketplace** → **Add from a repository**, enter `sanh09/app-guide-plugin`, then add `ai-chat-guide`.
+In the Claude web or desktop app: **Customize** → **Plugins** → **Add** → **Add marketplace** → **Add from a repository**, enter `sanh09/app-guide-plugin`, then add `appguide-tutor`. The plugin contains one skill, `ai-chat-guide`.
 
 ## What it does
 
