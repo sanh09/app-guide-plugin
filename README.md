@@ -1,97 +1,113 @@
-# app-guide-plugin: Claude 앱 사용법 튜터 플러그인
+# app-guide-plugin: a tutor plugin for using the Claude app
 
-> **응답 언어**: 모든 튜터는 학습자가 쓰는 언어(한국어, 영어, 일본어 등)로 답합니다. 스킬 이름의 `-ko`는 처음 만든 이름을 그대로 둔 것입니다. All tutors reply in the learner's language.
+**English** | [한국어](README.ko.md)
 
+> **Reply language**: the tutor replies in the language the learner writes in (English, Korean, Japanese, and so on). The `-ko` suffix in the skill name is kept from the original name so that existing installs keep working.
 
-Claude **웹(claude.ai)·데스크톱 앱**을 처음 쓰는 분부터 기능을 더 깊이 쓰고 싶은 분까지, Claude 사용법을 한 단계씩 배우는 튜터 플러그인입니다. 코딩 지식은 필요 없습니다.
+A tutor plugin that teaches how to use the Claude **web (claude.ai) and desktop apps** one step at a time, from your first chat to the more advanced features. No coding knowledge is needed.
 
-## 과정 구성 (3단계, 12개 레슨)
+## Course outline (3 levels, 12 lessons)
 
-- **기초**: 첫 대화와 화면 둘러보기, 좋은 질문 쓰기, 파일·이미지 올리기, 웹 검색·Research·생각 설정
-- **활용**: 프로젝트, 지침·메모리·이전 채팅 검색·시크릿 채팅, 아티팩트와 파일 만들기, 음성 모드와 모바일
-- **고급**: 커넥터로 앱 연결하기, 스킬, 여러 기능 조합하기, 안전하고 믿을 수 있게 쓰기
+- **Basics**: your first chat and a tour of the screen, writing good questions, uploading files and images, web search, Research, and thinking settings
+- **Everyday use**: Projects; instructions, memory, past-chat search, and incognito chats; artifacts and file creation; voice mode and mobile
+- **Advanced**: connecting apps with connectors, skills, combining features, and using Claude safely and reliably
 
-레슨마다 설명, 새 채팅에서 해 보는 실습, 퀴즈가 있습니다. 메뉴 경로와 기능 정보는 공식 도움말(https://support.claude.com)로 확인한 내용입니다(2026-11 기준).
+Each lesson has an explanation, a hands-on exercise in a new chat, and a quiz. Menu paths and feature details are checked against the official help center (https://support.claude.com) as of 2026-11.
 
-## 설치 방법
+## Install
 
-### 방법 1. 플러그인으로 추가 (유료 플랜: Pro, Max, Ultra, Team, Enterprise)
+### Option 1. Add it as a plugin (paid plans: Pro, Max, Ultra, Team, Enterprise)
 
-1. Claude 웹 또는 데스크톱 앱 왼쪽 메뉴에서 **사용자 정의(Customize)** → **플러그인(Plugins)** 탭으로 갑니다.
-2. **추가(Add)** → **마켓플레이스 추가(Add marketplace)** → **저장소에서 추가(Add from a repository)**를 고르고 `sanh09/app-guide-plugin`을 입력합니다.
-3. 추가된 마켓플레이스에서 `ai-chat-guide-ko`를 찾아 **추가(Add)**합니다.
+1. In the Claude web or desktop app, open **Customize** in the left menu, then the **Plugins** tab.
+2. Choose **Add** → **Add marketplace** → **Add from a repository**, and enter `sanh09/app-guide-plugin`.
+3. Find `ai-chat-guide-ko` in the new marketplace and select **Add**.
 
-웹·데스크톱에서 추가한 플러그인은 계정에 저장되어, 같은 계정으로 로그인한 Claude Code에도 이어집니다. 조직이 마켓플레이스를 제한하는 경우에는 관리자에게 문의하세요.
+Plugins added on the web or desktop are saved to your account and also carry over to Claude Code signed in with the same account. If your organization restricts marketplaces, ask your admin.
 
-### 방법 2. 스킬로 추가 (무료 플랜 포함)
+### Option 2. Add it as a skill (Free plan included)
 
-1. [`dist/ai-chat-guide-ko-skill.zip`](dist/ai-chat-guide-ko-skill.zip)을 내려받습니다(파일을 연 뒤 "Download raw file"). 압축은 풀지 않습니다.
-2. **사용자 정의(Customize)** → **스킬(Skills)** → **"+"** → **"+ 스킬 만들기"** → **"스킬 업로드"**에서 파일을 올립니다.
-3. 목록에 나타난 스킬이 켜져 있는지 확인합니다.
+1. Download [`dist/ai-chat-guide-ko-skill.zip`](dist/ai-chat-guide-ko-skill.zip) (open the file, then "Download raw file"). Don't unzip it.
+2. Go to **Customize** → **Skills** → **"+"** → **"+ Create skill"** → **"Upload a skill"** and upload the file.
+3. Check that the skill is turned on in the list.
 
-스킬을 쓰려면 설정에서 코드 실행(파일 생성) 기능이 켜져 있어야 합니다. 플러그인과 스킬 중 **하나만** 추가하세요. 둘 다 추가하면 같은 튜터가 두 번 보입니다.
+Skills need code execution (file creation) turned on in settings. Add **either** the plugin or the skill, not both. With both, the same tutor shows up twice.
 
-### 플러그인 파일을 직접 올릴 때
+### Uploading the plugin file directly
 
-직접 업로드가 필요한 환경을 위해 플러그인 압축 파일 [`dist/ai-chat-guide-ko-plugin.zip`](dist/ai-chat-guide-ko-plugin.zip)도 함께 둡니다.
+For setups that need a direct upload, the plugin archive [`dist/ai-chat-guide-ko-plugin.zip`](dist/ai-chat-guide-ko-plugin.zip) is also provided.
 
-## 사용법
+## Usage
 
-새 채팅에서 이렇게 말하면 시작됩니다.
+Start a new chat and say something like:
 
-- "Claude 처음 써 봐요. 사용법 알려 주세요"
-- "프로젝트 기능이 뭐예요?"
-- "메모리 끄는 법 알려 주세요"
-- "커넥터 연결하는 법 알려 주세요"
-- "Claude 사용법 퀴즈 내 주세요"
+- "I'm new to Claude. Show me how to use it"
+- "What are Projects?"
+- "How do I turn off memory?"
+- "How do I connect my apps to Claude?"
+- "Give me a quiz on using Claude"
 
-플러그인으로 추가했다면 `/ai-chat-guide-ko:ai-chat-guide-ko`로 직접 부를 수도 있습니다.
+If you added it as a plugin, you can also call it directly with `/ai-chat-guide-ko:ai-chat-guide-ko`.
 
-## 구조
+## What the plugin does
+
+- It only adds one skill (instructions and reference files). There are no hooks, MCP servers, or scripts, and it doesn't send data anywhere.
+- It doesn't save your progress. In a new chat, the tutor asks where you want to start.
+
+## Structure
 
 ```
-.claude-plugin/marketplace.json            마켓플레이스 정의 (sanh09-app-guide)
+.claude-plugin/marketplace.json            marketplace definition (sanh09-app-guide)
 plugins/ai-chat-guide-ko/
-  .claude-plugin/plugin.json               플러그인 정의
+  .claude-plugin/plugin.json               plugin definition
+  README.md, README.ko.md, LICENSE
   skills/ai-chat-guide-ko/
-    SKILL.md                               튜터 규칙
-    references/curriculum.md               레슨 1~12, 실습, 퀴즈 문제 은행
-    references/facts.md                    도움말 문서로 확인한 메뉴 경로·기능 정리
+    SKILL.md                               tutor rules
+    references/curriculum.md               lessons 1–12, exercises, quiz bank
+    references/quiz-answers.md             quiz answer key (read only when grading)
+    references/facts.md                    menu paths and features checked against the help center
 dist/
-  ai-chat-guide-ko-skill.zip               스킬 업로드용
-  ai-chat-guide-ko-plugin.zip              플러그인 업로드용
+  ai-chat-guide-ko-skill.zip               for skill upload
+  ai-chat-guide-ko-plugin.zip              for plugin upload
 ```
 
-내용을 고친 뒤에는 `plugin.json`의 `version`을 올리고, `dist/`의 압축 파일도 다시 만들어 주세요.
+After editing, raise `version` in `plugin.json` and rebuild the archives in `dist/`.
 
-## 관련 저장소
+## Related repositories
 
-- Claude 앱에서 배우는 Claude Code 과정: https://github.com/sanh09/guide-protocol
-- Claude Code 안에서 배우는 Claude Code 과정: https://github.com/sanh09/code-guide-protocol
+- Claude Code courses in the Claude app: https://github.com/sanh09/guide-protocol
+- Claude Code courses inside Claude Code: https://github.com/sanh09/code-guide-protocol
 
-## 업데이트 내역
+## Release notes
 
-### 2026-11-25: 프로젝트 안내 바로잡기 (0.3.1)
-- 프로젝트는 Free를 포함한 모든 사용자가 쓸 수 있고, Free 플랜은 최대 5개까지 만들 수 있다고 안내합니다. 이전에는 프로젝트 지침을 유료 기능으로 안내했습니다.
-- 이 저장소가 `ai-chat-guide-ko`의 유일한 관리 위치가 되었습니다. guide-protocol에서는 이 스킬을 뺐습니다.
+### 2026-11-25: English README and license
+- The README is now in English by default, with the Korean version in [README.ko.md](README.ko.md). The plugin folder has its own README and LICENSE.
 
-### 2026-11-25: 학습자 언어로 응답 (0.3.0)
-- 학습자가 쓰는 언어(한국어, 영어, 일본어 등)로 답합니다. 퀴즈를 옮겨도 보기의 뜻은 유지하고, 채점은 뜻으로 대조합니다.
+### 2026-11-25: Projects facts corrected (0.3.1)
+- The tutor now says Projects are available to every user, Free included, and that the Free plan can create up to 5 projects. Before, it described project instructions as a paid feature.
+- This repository is now the only home of `ai-chat-guide-ko`. It was removed from guide-protocol.
 
-### 2026-11-25: 퀴즈 정답 노출 수정 (0.2.0)
-- 퀴즈를 낼 때 정답이 문제·예시·힌트에 함께 보이던 문제를 고쳤습니다. 정답은 `references/quiz-answers.md`로 분리되어 채점할 때만 쓰입니다.
-- 보기 순서가 매번 섞이고, 답 형식 예시는 `1-?, 2-?`처럼 자리 표시만 씁니다.
-- 퀴즈 카드에서는 정답을 정답 칸에만 넣고, 퀴즈 모드로 엽니다. 선택형 질문 버튼으로는 퀴즈를 내지 않습니다.
+### 2026-11-25: Replies in the learner's language (0.3.0)
+- The tutor replies in the language the learner writes in. Translated quizzes keep the meaning of each option, and grading compares meanings.
 
-**업데이트 방법**
-- 플러그인으로 추가했다면: 사용자 정의(Customize) > 플러그인(Plugins)에서 `sanh09-app-guide` 마켓플레이스를 새로 고치거나, 플러그인을 지우고 다시 추가해 주세요.
-- 스킬로 추가했다면: 사용자 정의 > 스킬에서 기존 스킬을 지우고 `dist/ai-chat-guide-ko-skill.zip`을 다시 올려 주세요.
+### 2026-11-25: Quiz answers no longer leak (0.2.0)
+- Fixed quiz answers showing up in the question, examples, or hints. Answers now live in `references/quiz-answers.md` and are read only when grading.
+- Options are shuffled every time, and answer-format examples use placeholders only, such as `1-?, 2-?`.
+- Quiz cards put the answer only in the answer field and open in quiz mode. Quizzes are never asked with multiple-choice question buttons.
 
-전체 변경 기록: https://github.com/sanh09/code-guide-protocol/blob/main/maintenance/CHANGELOG.md
+**How to update**
+- Added as a plugin: in Customize > Plugins, refresh the `sanh09-app-guide` marketplace, or remove the plugin and add it again.
+- Added as a skill: in Customize > Skills, delete the old skill and upload `dist/ai-chat-guide-ko-skill.zip` again.
 
-## 변경 방법
+Full change log: https://github.com/sanh09/code-guide-protocol/blob/main/maintenance/CHANGELOG.md
 
-이 저장소의 변경은 `main`에 직접 push하지 않고 PR(Pull Request)로 진행합니다. 브랜치를 만들어 수정하고, 검증(`claude plugin validate .` 등)이 통과하면 PR을 merge합니다. 자동 업데이트도 같은 방식으로 PR을 만들고 merge합니다. 자세한 절차: https://github.com/sanh09/code-guide-protocol/blob/main/maintenance/MAINTENANCE.md
-## 유지보수
+## Contributing
 
-`dist/` 파일은 `bash scripts/build-dist.sh`로 다시 만듭니다. 업데이트 절차와 기록은 https://github.com/sanh09/code-guide-protocol/tree/main/maintenance 에 있습니다.
+Changes go through pull requests, not direct pushes to `main`. Make a branch, edit, and merge the PR once checks such as `claude plugin validate .` pass. The automatic updates follow the same flow. Details: https://github.com/sanh09/code-guide-protocol/blob/main/maintenance/MAINTENANCE.md
+
+## Maintenance
+
+Rebuild the `dist/` files with `bash scripts/build-dist.sh`. The update procedure and records are in https://github.com/sanh09/code-guide-protocol/tree/main/maintenance
+
+## License
+
+MIT. See [`LICENSE`](LICENSE) (also in [`plugins/ai-chat-guide-ko/LICENSE`](plugins/ai-chat-guide-ko/LICENSE)).
