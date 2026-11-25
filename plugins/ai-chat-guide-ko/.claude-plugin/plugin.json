@@ -1,6 +1,6 @@
 {
   "name": "ai-chat-guide-ko",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "description": "Step-by-step tutor for the Claude web and desktop apps: first chat, good prompts, files, web search and Research, Projects, instructions and memory, artifacts, voice, connectors, skills, and safe use, in the learner's language. (Claude 앱 사용법 튜터)",
   "author": {
     "name": "sanh09"
