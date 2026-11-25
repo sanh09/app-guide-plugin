@@ -21,7 +21,7 @@ Claude **웹(claude.ai)·데스크톱 앱**을 처음 쓰는 분부터 기능을
 
 1. Claude 웹 또는 데스크톱 앱 왼쪽 메뉴에서 **사용자 정의(Customize)** → **플러그인(Plugins)** 탭으로 갑니다.
 2. **추가(Add)** → **마켓플레이스 추가(Add marketplace)** → **저장소에서 추가(Add from a repository)**를 고르고 `sanh09/app-guide-plugin`을 입력합니다.
-3. 추가된 마켓플레이스에서 `ai-chat-guide`를 찾아 **추가(Add)**합니다.
+3. 추가된 마켓플레이스에서 `appguide-tutor`(스킬 `ai-chat-guide`)를 찾아 **추가(Add)**합니다.
 
 웹·데스크톱에서 추가한 플러그인은 계정에 저장되어, 같은 계정으로 로그인한 Claude Code에도 이어집니다. 조직이 마켓플레이스를 제한하는 경우에는 관리자에게 문의하세요.
 
@@ -47,7 +47,7 @@ Claude **웹(claude.ai)·데스크톱 앱**을 처음 쓰는 분부터 기능을
 - "커넥터 연결하는 법 알려 주세요"
 - "Claude 사용법 퀴즈 내 주세요"
 
-플러그인으로 추가했다면 `/ai-chat-guide:ai-chat-guide`로 직접 부를 수도 있습니다.
+플러그인으로 추가했다면 `/appguide-tutor:ai-chat-guide`로 직접 부를 수도 있습니다.
 
 ## 플러그인이 하는 일
 
@@ -82,9 +82,10 @@ dist/
 
 ### 2026-11-25: 이름에서 `-ko` 제거 (0.4.0, 다시 추가 필요)
 - 플러그인과 스킬 이름을 `ai-chat-guide-ko`에서 `ai-chat-guide`로 바꿨습니다. 학습자가 쓰는 언어로 답하는 것은 그대로입니다.
+- 플러그인 이름은 `appguide-tutor`이고, 스킬 `ai-chat-guide`를 담습니다(0.4.1). 짧은 이름이 디렉터리의 기존 항목과 너무 비슷해서 바꿨습니다.
 
 **예전 이름으로 추가했다면 다시 추가하세요** (새로 고침만으로는 새 이름으로 바뀌지 않습니다):
-- 플러그인으로 추가했다면: 사용자 정의(Customize) > 플러그인(Plugins)에서 `ai-chat-guide-ko`를 지우고, `sanh09-app-guide` 마켓플레이스를 새로 고친 뒤 `ai-chat-guide`를 추가하세요.
+- 플러그인으로 추가했다면: 사용자 정의(Customize) > 플러그인(Plugins)에서 `ai-chat-guide-ko`를 지우고, `sanh09-app-guide` 마켓플레이스를 새로 고친 뒤 `appguide-tutor`를 추가하세요.
 - 스킬로 추가했다면: 사용자 정의 > 스킬에서 `ai-chat-guide-ko`를 지우고 [`dist/ai-chat-guide-skill.zip`](dist/ai-chat-guide-skill.zip)을 올리세요.
 
 ### 2026-11-25: 영어 README와 라이선스

@@ -6,7 +6,7 @@
   },
   "plugins": [
     {
-      "name": "ai-chat-guide",
+      "name": "appguide-tutor",
       "source": "./plugins/ai-chat-guide",
       "description": "Claude 웹·데스크톱 앱 사용법 튜터 (기초·활용·고급 12개 레슨, 실습·퀴즈, 학습자 언어로 응답)"
     }

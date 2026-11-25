@@ -20,7 +20,7 @@ Each lesson has an explanation, a hands-on exercise in a new chat, and a quiz. M
 
 1. In the Claude web or desktop app, open **Customize** in the left menu, then the **Plugins** tab.
 2. Choose **Add** → **Add marketplace** → **Add from a repository**, and enter `sanh09/app-guide-plugin`.
-3. Find `ai-chat-guide` in the new marketplace and select **Add**.
+3. Find `appguide-tutor` (skill `ai-chat-guide`) in the new marketplace and select **Add**.
 
 Plugins added on the web or desktop are saved to your account and also carry over to Claude Code signed in with the same account. If your organization restricts marketplaces, ask your admin.
 
@@ -46,7 +46,7 @@ Start a new chat and say something like:
 - "How do I connect my apps to Claude?"
 - "Give me a quiz on using Claude"
 
-If you added it as a plugin, you can also call it directly with `/ai-chat-guide:ai-chat-guide`.
+If you added it as a plugin, you can also call it directly with `/appguide-tutor:ai-chat-guide`.
 
 ## What the plugin does
 
@@ -81,9 +81,10 @@ After editing, raise `version` in `plugin.json` and rebuild the archives in `dis
 
 ### 2026-11-25: `-ko` dropped from the name (0.4.0, action needed)
 - The plugin and skill are renamed from `ai-chat-guide-ko` to `ai-chat-guide`. The tutor still replies in the learner's language.
+- The plugin is named `appguide-tutor` and holds the skill `ai-chat-guide` (0.4.1). The short name was too close to existing directory listings.
 
 **If you added the old name, add it again** (refreshing can't move you to a new name):
-- Added as a plugin: in Customize > Plugins, remove `ai-chat-guide-ko`, refresh the `sanh09-app-guide` marketplace, and add `ai-chat-guide`.
+- Added as a plugin: in Customize > Plugins, remove `ai-chat-guide-ko`, refresh the `sanh09-app-guide` marketplace, and add `appguide-tutor`.
 - Added as a skill: in Customize > Skills, delete `ai-chat-guide-ko` and upload [`dist/ai-chat-guide-skill.zip`](dist/ai-chat-guide-skill.zip).
 
 ### 2026-11-25: English README and license
