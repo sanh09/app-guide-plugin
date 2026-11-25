@@ -42,6 +42,7 @@
 ## 프로젝트
 출처: https://support.claude.com/en/articles/9517075-what-are-projects, https://support.claude.com/en/articles/9519177-how-can-i-create-and-manage-projects
 - 자체 채팅 기록과 지식 공간을 가진 작업 공간이다.
+- 대상: Free를 포함한 모든 사용자가 프로젝트를 쓸 수 있다. Free 플랜은 프로젝트를 최대 5개까지 만들 수 있다. 프로젝트 지식이 커질 때 자동으로 검색해 쓰는 기능(RAG)은 유료 플랜에서 쓰인다.
 - 만들기: 왼쪽 메뉴 "프로젝트(Projects)" 또는 claude.ai/projects → "+ 새 프로젝트(New Project)" → 이름과 설명. **Claude는 이름과 설명을 보지 않는다.**
 - 프로젝트 지식(knowledge): 프로젝트 페이지 오른쪽. "+"로 문서·텍스트·코드를 올리면 그 프로젝트의 모든 채팅에서 쓰인다.
 - 프로젝트 지침: "프로젝트 지침 설정(Set project instructions)" → 지침 작성 → 저장. 프로젝트의 모든 채팅에 적용된다. 지침은 짧고 핵심만 쓰고, 작업별 요청은 채팅에서 한다.
@@ -54,7 +55,7 @@
 ## 나에게 맞추기: 지침 · 메모리 · 이전 채팅 검색 · 시크릿 채팅
 출처: https://support.claude.com/en/articles/10185728-understanding-claude-s-personalization-features, https://support.claude.com/en/articles/11817273, https://support.claude.com/en/articles/12260368-use-incognito-chats
 - **Claude 지침(계정 전체)**: 왼쪽 아래 이니셜 → 설정(Settings) → "Your Claude"(이전 레이아웃: "계정(Account)") → "지침(Instructions)"(이전: "Instructions for Claude"). 선호하는 방식, 자주 쓰는 용어, 말투 등을 적는다. 모든 대화에 적용된다.
-- 고르는 기준: 모든 대화에는 계정 지침, 특정 작업 묶음에는 프로젝트 지침(유료), 응답 방식이나 반복 작업에는 스킬.
+- 고르는 기준: 모든 대화에는 계정 지침, 특정 작업 묶음에는 프로젝트 지침(요금제에 따라 쓸 수 있는 기능이 다를 수 있음), 응답 방식이나 반복 작업에는 스킬.
 - **이전 채팅 검색**: "지난번에 [주제] 얘기한 거 찾아줘"처럼 물으면 이전 대화를 찾아 참고한다. 검색은 대화 안에 도구 사용으로 표시된다. 프로젝트 밖 채팅 전체, 또는 프로젝트별로 검색한다. 끄기: 설정 > Your Claude(이전: 설정 > 메모리)의 "채팅 검색 및 참조(Search and reference chats)".
 - **메모리**: 대화에서 알게 된 맥락(역할, 진행 중인 일, 선호하는 소통 방식 등)을 기억해 새 대화에 이어 쓴다. 켜기·끄기: 설정 > Your Claude(이전: 설정 > 메모리)의 "채팅에서 메모리 생성(Memory from chats / Generate memory from chat history)". 기억된 항목은 설정의 메모리 화면에서 주제(Topics)별로 보고 고치거나 지울 수 있다. 건강·신념 같은 민감한 주제는 따로 켜지 않으면 기억하지 않는다.
 - 한 채팅만 메모리를 빼려면, 첫 메시지를 보내기 전에 "+" 메뉴에서 메모리를 끈다. 이 채팅은 기록에 남는다.
