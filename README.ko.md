@@ -2,7 +2,7 @@
 
 [English](README.md) | **한국어**
 
-> **응답 언어**: 모든 튜터는 학습자가 쓰는 언어(한국어, 영어, 일본어 등)로 답합니다. 스킬 이름의 `-ko`는 처음 만든 이름을 그대로 둔 것입니다. All tutors reply in the learner's language.
+> **응답 언어**: 모든 튜터는 학습자가 쓰는 언어(한국어, 영어, 일본어 등)로 답합니다. All tutors reply in the learner's language.
 
 
 Claude **웹(claude.ai)·데스크톱 앱**을 처음 쓰는 분부터 기능을 더 깊이 쓰고 싶은 분까지, Claude 사용법을 한 단계씩 배우는 튜터 플러그인입니다. 코딩 지식은 필요 없습니다.
@@ -21,13 +21,13 @@ Claude **웹(claude.ai)·데스크톱 앱**을 처음 쓰는 분부터 기능을
 
 1. Claude 웹 또는 데스크톱 앱 왼쪽 메뉴에서 **사용자 정의(Customize)** → **플러그인(Plugins)** 탭으로 갑니다.
 2. **추가(Add)** → **마켓플레이스 추가(Add marketplace)** → **저장소에서 추가(Add from a repository)**를 고르고 `sanh09/app-guide-plugin`을 입력합니다.
-3. 추가된 마켓플레이스에서 `ai-chat-guide-ko`를 찾아 **추가(Add)**합니다.
+3. 추가된 마켓플레이스에서 `ai-chat-guide`를 찾아 **추가(Add)**합니다.
 
 웹·데스크톱에서 추가한 플러그인은 계정에 저장되어, 같은 계정으로 로그인한 Claude Code에도 이어집니다. 조직이 마켓플레이스를 제한하는 경우에는 관리자에게 문의하세요.
 
 ### 방법 2. 스킬로 추가 (무료 플랜 포함)
 
-1. [`dist/ai-chat-guide-ko-skill.zip`](dist/ai-chat-guide-ko-skill.zip)을 내려받습니다(파일을 연 뒤 "Download raw file"). 압축은 풀지 않습니다.
+1. [`dist/ai-chat-guide-skill.zip`](dist/ai-chat-guide-skill.zip)을 내려받습니다(파일을 연 뒤 "Download raw file"). 압축은 풀지 않습니다.
 2. **사용자 정의(Customize)** → **스킬(Skills)** → **"+"** → **"+ 스킬 만들기"** → **"스킬 업로드"**에서 파일을 올립니다.
 3. 목록에 나타난 스킬이 켜져 있는지 확인합니다.
 
@@ -35,7 +35,7 @@ Claude **웹(claude.ai)·데스크톱 앱**을 처음 쓰는 분부터 기능을
 
 ### 플러그인 파일을 직접 올릴 때
 
-직접 업로드가 필요한 환경을 위해 플러그인 압축 파일 [`dist/ai-chat-guide-ko-plugin.zip`](dist/ai-chat-guide-ko-plugin.zip)도 함께 둡니다.
+직접 업로드가 필요한 환경을 위해 플러그인 압축 파일 [`dist/ai-chat-guide-plugin.zip`](dist/ai-chat-guide-plugin.zip)도 함께 둡니다.
 
 ## 사용법
 
@@ -47,7 +47,7 @@ Claude **웹(claude.ai)·데스크톱 앱**을 처음 쓰는 분부터 기능을
 - "커넥터 연결하는 법 알려 주세요"
 - "Claude 사용법 퀴즈 내 주세요"
 
-플러그인으로 추가했다면 `/ai-chat-guide-ko:ai-chat-guide-ko`로 직접 부를 수도 있습니다.
+플러그인으로 추가했다면 `/ai-chat-guide:ai-chat-guide`로 직접 부를 수도 있습니다.
 
 ## 플러그인이 하는 일
 
@@ -58,17 +58,17 @@ Claude **웹(claude.ai)·데스크톱 앱**을 처음 쓰는 분부터 기능을
 
 ```
 .claude-plugin/marketplace.json            마켓플레이스 정의 (sanh09-app-guide)
-plugins/ai-chat-guide-ko/
+plugins/ai-chat-guide/
   .claude-plugin/plugin.json               플러그인 정의
   README.md, README.ko.md, LICENSE
-  skills/ai-chat-guide-ko/
+  skills/ai-chat-guide/
     SKILL.md                               튜터 규칙
     references/curriculum.md               레슨 1~12, 실습, 퀴즈 문제 은행
     references/quiz-answers.md             퀴즈 정답표 (채점할 때만 읽음)
     references/facts.md                    도움말 문서로 확인한 메뉴 경로·기능 정리
 dist/
-  ai-chat-guide-ko-skill.zip               스킬 업로드용
-  ai-chat-guide-ko-plugin.zip              플러그인 업로드용
+  ai-chat-guide-skill.zip               스킬 업로드용
+  ai-chat-guide-plugin.zip              플러그인 업로드용
 ```
 
 내용을 고친 뒤에는 `plugin.json`의 `version`을 올리고, `dist/`의 압축 파일도 다시 만들어 주세요.
@@ -79,6 +79,13 @@ dist/
 - Claude Code 안에서 배우는 Claude Code 과정: https://github.com/sanh09/code-guide-protocol
 
 ## 업데이트 내역
+
+### 2026-11-25: 이름에서 `-ko` 제거 (0.4.0, 다시 추가 필요)
+- 플러그인과 스킬 이름을 `ai-chat-guide-ko`에서 `ai-chat-guide`로 바꿨습니다. 학습자가 쓰는 언어로 답하는 것은 그대로입니다.
+
+**예전 이름으로 추가했다면 다시 추가하세요** (새로 고침만으로는 새 이름으로 바뀌지 않습니다):
+- 플러그인으로 추가했다면: 사용자 정의(Customize) > 플러그인(Plugins)에서 `ai-chat-guide-ko`를 지우고, `sanh09-app-guide` 마켓플레이스를 새로 고친 뒤 `ai-chat-guide`를 추가하세요.
+- 스킬로 추가했다면: 사용자 정의 > 스킬에서 `ai-chat-guide-ko`를 지우고 [`dist/ai-chat-guide-skill.zip`](dist/ai-chat-guide-skill.zip)을 올리세요.
 
 ### 2026-11-25: 영어 README와 라이선스
 - README 기본 언어를 영어로 바꾸고, 한국어는 이 파일(README.ko.md)에서 볼 수 있습니다. 플러그인 폴더에도 README와 LICENSE를 넣었습니다.
