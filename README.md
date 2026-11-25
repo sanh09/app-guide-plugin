@@ -2,7 +2,7 @@
 
 **English** | [한국어](README.ko.md)
 
-> **Reply language**: the tutor replies in the language the learner writes in (English, Korean, Japanese, and so on). The `-ko` suffix in the skill name is kept from the original name so that existing installs keep working.
+> **Reply language**: the tutor replies in the language the learner writes in (English, Korean, Japanese, and so on).
 
 A tutor plugin that teaches how to use the Claude **web (claude.ai) and desktop apps** one step at a time, from your first chat to the more advanced features. No coding knowledge is needed.
 
@@ -20,13 +20,13 @@ Each lesson has an explanation, a hands-on exercise in a new chat, and a quiz. M
 
 1. In the Claude web or desktop app, open **Customize** in the left menu, then the **Plugins** tab.
 2. Choose **Add** → **Add marketplace** → **Add from a repository**, and enter `sanh09/app-guide-plugin`.
-3. Find `ai-chat-guide-ko` in the new marketplace and select **Add**.
+3. Find `ai-chat-guide` in the new marketplace and select **Add**.
 
 Plugins added on the web or desktop are saved to your account and also carry over to Claude Code signed in with the same account. If your organization restricts marketplaces, ask your admin.
 
 ### Option 2. Add it as a skill (Free plan included)
 
-1. Download [`dist/ai-chat-guide-ko-skill.zip`](dist/ai-chat-guide-ko-skill.zip) (open the file, then "Download raw file"). Don't unzip it.
+1. Download [`dist/ai-chat-guide-skill.zip`](dist/ai-chat-guide-skill.zip) (open the file, then "Download raw file"). Don't unzip it.
 2. Go to **Customize** → **Skills** → **"+"** → **"+ Create skill"** → **"Upload a skill"** and upload the file.
 3. Check that the skill is turned on in the list.
 
@@ -34,7 +34,7 @@ Skills need code execution (file creation) turned on in settings. Add **either**
 
 ### Uploading the plugin file directly
 
-For setups that need a direct upload, the plugin archive [`dist/ai-chat-guide-ko-plugin.zip`](dist/ai-chat-guide-ko-plugin.zip) is also provided.
+For setups that need a direct upload, the plugin archive [`dist/ai-chat-guide-plugin.zip`](dist/ai-chat-guide-plugin.zip) is also provided.
 
 ## Usage
 
@@ -46,7 +46,7 @@ Start a new chat and say something like:
 - "How do I connect my apps to Claude?"
 - "Give me a quiz on using Claude"
 
-If you added it as a plugin, you can also call it directly with `/ai-chat-guide-ko:ai-chat-guide-ko`.
+If you added it as a plugin, you can also call it directly with `/ai-chat-guide:ai-chat-guide`.
 
 ## What the plugin does
 
@@ -57,17 +57,17 @@ If you added it as a plugin, you can also call it directly with `/ai-chat-guide-
 
 ```
 .claude-plugin/marketplace.json            marketplace definition (sanh09-app-guide)
-plugins/ai-chat-guide-ko/
+plugins/ai-chat-guide/
   .claude-plugin/plugin.json               plugin definition
   README.md, README.ko.md, LICENSE
-  skills/ai-chat-guide-ko/
+  skills/ai-chat-guide/
     SKILL.md                               tutor rules
     references/curriculum.md               lessons 1–12, exercises, quiz bank
     references/quiz-answers.md             quiz answer key (read only when grading)
     references/facts.md                    menu paths and features checked against the help center
 dist/
-  ai-chat-guide-ko-skill.zip               for skill upload
-  ai-chat-guide-ko-plugin.zip              for plugin upload
+  ai-chat-guide-skill.zip               for skill upload
+  ai-chat-guide-plugin.zip              for plugin upload
 ```
 
 After editing, raise `version` in `plugin.json` and rebuild the archives in `dist/`.
@@ -78,6 +78,13 @@ After editing, raise `version` in `plugin.json` and rebuild the archives in `dis
 - Claude Code courses inside Claude Code: https://github.com/sanh09/code-guide-protocol
 
 ## Release notes
+
+### 2026-11-25: `-ko` dropped from the name (0.4.0, action needed)
+- The plugin and skill are renamed from `ai-chat-guide-ko` to `ai-chat-guide`. The tutor still replies in the learner's language.
+
+**If you added the old name, add it again** (refreshing can't move you to a new name):
+- Added as a plugin: in Customize > Plugins, remove `ai-chat-guide-ko`, refresh the `sanh09-app-guide` marketplace, and add `ai-chat-guide`.
+- Added as a skill: in Customize > Skills, delete `ai-chat-guide-ko` and upload [`dist/ai-chat-guide-skill.zip`](dist/ai-chat-guide-skill.zip).
 
 ### 2026-11-25: English README and license
 - The README is now in English by default, with the Korean version in [README.ko.md](README.ko.md). The plugin folder has its own README and LICENSE.
@@ -110,4 +117,4 @@ Rebuild the `dist/` files with `bash scripts/build-dist.sh`. The update procedur
 
 ## License
 
-MIT. See [`LICENSE`](LICENSE) (also in [`plugins/ai-chat-guide-ko/LICENSE`](plugins/ai-chat-guide-ko/LICENSE)).
+MIT. See [`LICENSE`](LICENSE) (also in [`plugins/ai-chat-guide/LICENSE`](plugins/ai-chat-guide/LICENSE)).

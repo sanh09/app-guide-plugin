@@ -1,4 +1,4 @@
-# ai-chat-guide-ko: Claude 앱 사용법 튜터
+# ai-chat-guide: Claude 앱 사용법 튜터
 
 [English](README.md) | **한국어**
 
@@ -27,11 +27,11 @@ Claude 웹·데스크톱 앱을 첫 대화부터 커넥터·스킬까지 단계�
 - "프로젝트 기능이 뭐예요?"
 - "메모리 끄는 법 알려 주세요"
 
-메뉴 경로·명령어·설정은 공식 문서로 확인해 `skills/ai-chat-guide-ko/references/facts.md`에 정리했습니다. 퀴즈 정답은 별도 파일에 두고 채점할 때만 읽으므로, 답하기 전에 보이지 않습니다.
+메뉴 경로·명령어·설정은 공식 문서로 확인해 `skills/ai-chat-guide/references/facts.md`에 정리했습니다. 퀴즈 정답은 별도 파일에 두고 채점할 때만 읽으므로, 답하기 전에 보이지 않습니다.
 
 ## 설치
 
-Claude 웹 또는 데스크톱 앱에서 **사용자 정의(Customize)** → **플러그인(Plugins)** → **추가(Add)** → **마켓플레이스 추가(Add marketplace)** → **저장소에서 추가(Add from a repository)**로 `sanh09/app-guide-plugin`을 입력한 뒤 `ai-chat-guide-ko`를 추가하세요.
+Claude 웹 또는 데스크톱 앱에서 **사용자 정의(Customize)** → **플러그인(Plugins)** → **추가(Add)** → **마켓플레이스 추가(Add marketplace)** → **저장소에서 추가(Add from a repository)**로 `sanh09/app-guide-plugin`을 입력한 뒤 `ai-chat-guide`를 추가하세요.
 
 ## 플러그인이 하는 일
 

@@ -1,4 +1,4 @@
-# ai-chat-guide-ko: Claude app guide tutor
+# ai-chat-guide: Claude app guide tutor
 
 **English** | [한국어](README.ko.md)
 
@@ -27,11 +27,11 @@ Start a conversation and say what you want to learn, for example:
 - "What are Projects?"
 - "How do I turn off memory?"
 
-Menu paths, commands, and settings are checked against the official documentation and kept in `skills/ai-chat-guide-ko/references/facts.md`. Quiz answers are kept in a separate file and read only when grading, so they are not shown before you answer.
+Menu paths, commands, and settings are checked against the official documentation and kept in `skills/ai-chat-guide/references/facts.md`. Quiz answers are kept in a separate file and read only when grading, so they are not shown before you answer.
 
 ## Install
 
-In the Claude web or desktop app: **Customize** → **Plugins** → **Add** → **Add marketplace** → **Add from a repository**, enter `sanh09/app-guide-plugin`, then add `ai-chat-guide-ko`.
+In the Claude web or desktop app: **Customize** → **Plugins** → **Add** → **Add marketplace** → **Add from a repository**, enter `sanh09/app-guide-plugin`, then add `ai-chat-guide`.
 
 ## What it does
 
