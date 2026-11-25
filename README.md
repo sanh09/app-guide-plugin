@@ -65,3 +65,7 @@ dist/
 
 - Claude 앱에서 배우는 Claude Code 과정: https://github.com/sanh09/guide-protocol
 - Claude Code 안에서 배우는 Claude Code 과정: https://github.com/sanh09/code-guide-protocol
+
+## 유지보수
+
+`dist/` 파일은 `bash scripts/build-dist.sh`로 다시 만듭니다. 업데이트 절차와 기록은 https://github.com/sanh09/code-guide-protocol/tree/main/maintenance 에 있습니다.
