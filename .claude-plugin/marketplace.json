@@ -1,0 +1,12 @@
+{
+  "name": "sanh09-app-guide",
+  "description": "sanh09의 Claude 앱 학습 플러그인 모음",
+  "owner": { "name": "sanh09" },
+  "plugins": [
+    {
+      "name": "ai-chat-guide-ko",
+      "source": "./plugins/ai-chat-guide-ko",
+      "description": "Claude 웹·데스크톱 앱 사용법을 한국어로 단계별로 배우는 튜터 (기초·활용·고급 12개 레슨, 실습·퀴즈)"
+    }
+  ]
+}
