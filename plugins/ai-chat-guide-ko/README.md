@@ -42,4 +42,4 @@ In the Claude web or desktop app: **Customize** → **Plugins** → **Add** → 
 
 Source, release notes, and other courses: https://github.com/sanh09/app-guide-plugin
 
-License: see [LICENSE](LICENSE).
+License: MIT. See [LICENSE](LICENSE).

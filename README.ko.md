@@ -111,4 +111,4 @@ dist/
 
 ## 라이선스
 
-[`plugins/ai-chat-guide-ko/LICENSE`](plugins/ai-chat-guide-ko/LICENSE)를 보세요.
+MIT 라이선스입니다. [`LICENSE`](LICENSE)를 보세요(플러그인 폴더에도 같은 파일이 있습니다).

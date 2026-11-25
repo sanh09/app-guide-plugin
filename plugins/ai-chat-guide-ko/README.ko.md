@@ -42,4 +42,4 @@ Claude 웹 또는 데스크톱 앱에서 **사용자 정의(Customize)** → **�
 
 소스, 업데이트 내역, 다른 과정: https://github.com/sanh09/app-guide-plugin
 
-라이선스: [LICENSE](LICENSE)를 보세요.
+라이선스: MIT. [LICENSE](LICENSE)를 보세요.

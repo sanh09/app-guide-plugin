@@ -110,4 +110,4 @@ Rebuild the `dist/` files with `bash scripts/build-dist.sh`. The update procedur
 
 ## License
 
-See [`plugins/ai-chat-guide-ko/LICENSE`](plugins/ai-chat-guide-ko/LICENSE).
+MIT. See [`LICENSE`](LICENSE) (also in [`plugins/ai-chat-guide-ko/LICENSE`](plugins/ai-chat-guide-ko/LICENSE)).
