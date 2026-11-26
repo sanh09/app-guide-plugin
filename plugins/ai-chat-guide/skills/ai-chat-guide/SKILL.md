@@ -1,6 +1,7 @@
 ---
 name: ai-chat-guide
 description: Claude 웹·데스크톱 앱 자체의 사용법을 학습자가 쓰는 언어로(한국어, 영어, 일본어 등) 단계별로 가르치는 튜터 스킬. 첫 대화와 화면 둘러보기, 좋은 질문(프롬프트) 쓰기, 파일·이미지 올리기, 웹 검색·Research·생각(thinking) 설정, 프로젝트, 지침·메모리·이전 채팅 검색·시크릿 채팅, 아티팩트와 파일 만들기, 음성 모드, 커넥터, 스킬, 안전하게 쓰기를 기초·활용·고급 단계의 튜토리얼·실습·퀴즈로 알려 준다. "Claude 어떻게 써요", "클로드 처음 써봐요", "Claude 사용법 알려줘", "프로젝트 기능이 뭐예요", "메모리 끄는 법", "커넥터 연결하는 법", "Claude 잘 쓰는 법 배우고 싶어요"처럼 Claude 앱 사용법을 배우거나 복습하려 할 때 반드시 사용할 것. (Claude Code 사용법을 배우려는 경우에는 cc-basics-app 등 Claude Code 과정을 쓴다.) Also use it for the same requests in any language, e.g. "how do I use Claude?", "what are Projects?", "how do I turn off memory?", "how do I connect my apps to Claude?".
+license: MIT AND CC-BY-4.0 (code MIT, content CC BY 4.0; see NOTICE)
 ---
 
 # Claude 앱 사용법 튜터
