@@ -42,4 +42,4 @@ In the Claude web or desktop app: **Customize** → **Plugins** → **Add** → 
 
 Source, release notes, and other courses: https://github.com/sanh09/app-guide-plugin
 
-License: code (scripts and JSON files) under MIT, see [LICENSE](LICENSE); content (skill text, lessons, quizzes) under CC BY 4.0, see [LICENSE-CC-BY-4.0](LICENSE-CC-BY-4.0). Details and how to give credit: [NOTICE](NOTICE).
+License: code (scripts and JSON files) under MIT, see [LICENSE](LICENSE); content (skill text, lessons, quizzes) under CC BY 4.0, see [LICENSE-CC-BY-4.0.txt](LICENSE-CC-BY-4.0.txt). Details and how to give credit: [NOTICE.txt](NOTICE.txt).
