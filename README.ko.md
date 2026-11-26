@@ -60,7 +60,8 @@ Claude **웹(claude.ai)·데스크톱 앱**을 처음 쓰는 분부터 기능을
 .claude-plugin/marketplace.json            마켓플레이스 정의 (sanh09-app-guide)
 plugins/ai-chat-guide/
   .claude-plugin/plugin.json               플러그인 정의
-  README.md, README.ko.md, LICENSE
+  README.md, README.ko.md
+  LICENSE, LICENSE-CC-BY-4.0, NOTICE      라이선스 (코드 MIT, 내용 CC BY 4.0)
   skills/ai-chat-guide/
     SKILL.md                               튜터 규칙
     references/curriculum.md               레슨 1~12, 실습, 퀴즈 문제 은행
@@ -79,6 +80,10 @@ dist/
 - Claude Code 안에서 배우는 Claude Code 과정: https://github.com/sanh09/code-guide-protocol
 
 ## 업데이트 내역
+
+### 2026-11-26: 이중 라이선스 (코드 MIT, 내용 CC BY 4.0)
+- 코드는 계속 MIT이고, 튜터 내용은 이제 CC BY 4.0입니다. 아래 [라이선스](#라이선스)와 [`NOTICE`](NOTICE)를 보세요.
+- 플러그인 폴더와 `dist/`의 두 `.zip`에 `LICENSE`, `LICENSE-CC-BY-4.0`, `NOTICE`가 들어갑니다(0.4.2). 가르치는 내용은 바뀌지 않습니다.
 
 ### 2026-11-25: 이름에서 `-ko` 제거 (0.4.0, 다시 추가 필요)
 - 플러그인과 스킬 이름을 `ai-chat-guide-ko`에서 `ai-chat-guide`로 바꿨습니다. 학습자가 쓰는 언어로 답하는 것은 그대로입니다.
@@ -119,4 +124,8 @@ dist/
 
 ## 라이선스
 
-MIT 라이선스입니다. [`LICENSE`](LICENSE)를 보세요(플러그인 폴더에도 같은 파일이 있습니다).
+이 프로젝트는 라이선스 두 개를 씁니다.
+- **코드**: 셸 스크립트(`*.sh`)와 JSON·YAML 설정 파일은 [MIT 라이선스](LICENSE)입니다. 레슨 안의 코드 예시도 MIT로 쓸 수 있습니다.
+- **내용**: `SKILL.md`, 참고 파일(레슨, 사실, 퀴즈, 정답표), 평가(evals), README, 유지보수 문서, 이미지는 [크리에이티브 커먼즈 저작자표시 4.0(CC BY 4.0)](LICENSE-CC-BY-4.0)입니다.
+
+내용을 다시 쓸 때는 이렇게 출처를 밝혀 주세요: `app-guide-plugin by sanh09 (https://github.com/sanh09/app-guide-plugin), CC BY 4.0`. 자세한 범위와 Anthropic 상표 안내는 [`NOTICE`](NOTICE)에 있습니다. 플러그인 폴더와 `dist/`의 `.zip` 파일에도 세 파일이 모두 있습니다.

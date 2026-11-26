@@ -59,7 +59,8 @@ If you added it as a plugin, you can also call it directly with `/appguide-tutor
 .claude-plugin/marketplace.json            marketplace definition (sanh09-app-guide)
 plugins/ai-chat-guide/
   .claude-plugin/plugin.json               plugin definition
-  README.md, README.ko.md, LICENSE
+  README.md, README.ko.md
+  LICENSE, LICENSE-CC-BY-4.0, NOTICE      licenses (code MIT, content CC BY 4.0)
   skills/ai-chat-guide/
     SKILL.md                               tutor rules
     references/curriculum.md               lessons 1–12, exercises, quiz bank
@@ -78,6 +79,10 @@ After editing, raise `version` in `plugin.json` and rebuild the archives in `dis
 - Claude Code courses inside Claude Code: https://github.com/sanh09/code-guide-protocol
 
 ## Release notes
+
+### 2026-11-26: Dual license (code MIT, content CC BY 4.0)
+- Code stays under MIT; the tutor content is now under CC BY 4.0. See [License](#license) and [`NOTICE`](NOTICE).
+- The plugin folder and both `.zip` files in `dist/` now include `LICENSE`, `LICENSE-CC-BY-4.0` and `NOTICE` (0.4.2). Nothing changes in how the tutor teaches.
 
 ### 2026-11-25: `-ko` dropped from the name (0.4.0, action needed)
 - The plugin and skill are renamed from `ai-chat-guide-ko` to `ai-chat-guide`. The tutor still replies in the learner's language.
@@ -118,4 +123,8 @@ Rebuild the `dist/` files with `bash scripts/build-dist.sh`. The update procedur
 
 ## License
 
-MIT. See [`LICENSE`](LICENSE) (also in [`plugins/ai-chat-guide/LICENSE`](plugins/ai-chat-guide/LICENSE)).
+This project uses two licenses:
+- **Code** — shell scripts (`*.sh`) and JSON/YAML configuration files — is under the [MIT License](LICENSE). Code examples inside the lessons may also be used under MIT.
+- **Content** — `SKILL.md`, the reference files (lessons, facts, quizzes, answer keys), evals, READMEs, maintenance documents and images — is under [Creative Commons Attribution 4.0 (CC BY 4.0)](LICENSE-CC-BY-4.0).
+
+When you reuse the content, credit it like this: `app-guide-plugin by sanh09 (https://github.com/sanh09/app-guide-plugin), CC BY 4.0`. [`NOTICE`](NOTICE) has the details and the note on Anthropic trademarks. The plugin folder and every `.zip` in `dist/` include all three files.
